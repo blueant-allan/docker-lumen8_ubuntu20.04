@@ -26,7 +26,7 @@ docker build -t lumen8.x-image -f Dockerfile.dev .
 ## Create instance of the container
 
 ```
-docker run -p 8080:80 -it --name container_name-web --mount type=bind,source="$(pwd)",target=/var/www/html lumen8.x-image
+docker run -p 8080:80 -dit --name container_name-web --mount type=bind,source="$(pwd)",target=/var/www/html lumen8.x-image
 ```
 
 ## Manage the container
